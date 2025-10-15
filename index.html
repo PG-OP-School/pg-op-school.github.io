@@ -141,10 +141,10 @@
       {
         document.getElementById("rfLabel").textContent = `It is not raining`;
       }
-      if(data.field4==1){
+      if(data.field3==1){
         document.getElementById("dnLabel").textContent = `It is day`;
       }
-      else{
+      else if(data.field3==0) {
         document.getElementById("dnLabel").textContent = `It is night`;
       }
       } catch (error) {
@@ -158,4 +158,5 @@
 </body>
 
 </html>
+
 
